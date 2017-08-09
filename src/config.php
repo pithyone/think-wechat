@@ -2,11 +2,6 @@
 
 return [
     /**
-     * Debug 模式，用于记录调试日志
-     */
-    'debug'    => \think\App::$debug,
-
-    /**
      * 日志配置
      */
     'log'      => [
