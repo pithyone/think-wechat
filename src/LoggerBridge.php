@@ -2,7 +2,6 @@
 
 namespace think;
 
-
 use Monolog\Handler\AbstractProcessingHandler;
 
 /**

@@ -2,7 +2,6 @@
 
 namespace think;
 
-
 use Doctrine\Common\Cache\CacheProvider;
 
 /**
