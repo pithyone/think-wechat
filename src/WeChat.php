@@ -5,9 +5,7 @@ namespace think;
 use pithyone\wechat\Work;
 
 /**
- * Class WeChat
- *
- * @package think
+ * Class WeChat.
  */
 class WeChat
 {
@@ -15,6 +13,7 @@ class WeChat
      * @param string $agentId 企业应用id
      *
      * @return \pithyone\wechat\Work
+     *
      * @author wangbing <pithyone@vip.qq.com>
      */
     public static function agent($agentId)
@@ -24,6 +23,7 @@ class WeChat
         $config['debug'] = App::$debug;
 
         $work = new Work($config);
+
         return $work->setAgentId($agentId);
     }
 }

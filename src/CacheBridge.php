@@ -5,9 +5,7 @@ namespace think;
 use Doctrine\Common\Cache\CacheProvider;
 
 /**
- * Class CacheBridge
- *
- * @package think
+ * Class CacheBridge.
  */
 class CacheBridge extends CacheProvider
 {
@@ -56,6 +54,5 @@ class CacheBridge extends CacheProvider
      */
     protected function doGetStats()
     {
-        return null;
     }
 }
