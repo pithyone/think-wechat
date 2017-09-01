@@ -1,8 +1,9 @@
 <?php
 
-namespace think;
+namespace think\Bridge;
 
 use Monolog\Handler\AbstractProcessingHandler;
+use think\Log;
 
 /**
  * Class LoggerBridge.

@@ -1,8 +1,9 @@
 <?php
 
-namespace think;
+namespace think\Bridge;
 
 use Doctrine\Common\Cache\CacheProvider;
+use think\Cache;
 
 /**
  * Class CacheBridge.

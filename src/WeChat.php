@@ -10,15 +10,13 @@ use pithyone\wechat\Work;
 class WeChat
 {
     /**
-     * @param string $agentId 企业应用id
+     * @param string $agentId 应用ID
      *
-     * @return \pithyone\wechat\Work
-     *
-     * @author wangbing <pithyone@vip.qq.com>
+     * @return Work
      */
     public static function agent($agentId)
     {
-        $config = Config::get('wechat');
+        $config = Config::get('work_wechat');
 
         $config['debug'] = App::$debug;
 
