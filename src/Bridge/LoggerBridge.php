@@ -15,6 +15,6 @@ class LoggerBridge extends AbstractProcessingHandler
      */
     protected function write(array $record)
     {
-        Log::record($record);
+        Log::record($record['formatted'], strtolower($record['level_name']));
     }
 }
