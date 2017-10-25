@@ -5,9 +5,6 @@ namespace think\Bridge;
 use Doctrine\Common\Cache\CacheProvider;
 use think\Cache;
 
-/**
- * Class CacheBridge.
- */
 class CacheBridge extends CacheProvider
 {
     /**

@@ -4,9 +4,6 @@ namespace think;
 
 use pithyone\wechat\Work;
 
-/**
- * Class WeChat.
- */
 class WeChat
 {
     /**

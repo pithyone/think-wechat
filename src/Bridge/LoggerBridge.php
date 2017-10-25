@@ -5,9 +5,6 @@ namespace think\Bridge;
 use Monolog\Handler\AbstractProcessingHandler;
 use think\Log;
 
-/**
- * Class LoggerBridge.
- */
 class LoggerBridge extends AbstractProcessingHandler
 {
     /**
