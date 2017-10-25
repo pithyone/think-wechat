@@ -1,21 +1,27 @@
 <?php
 
-use think\Bridge\CacheBridge;
-use think\Bridge\LoggerBridge;
-
 return [
-    'cache'    => new CacheBridge(),
-    'logger'   => new LoggerBridge(),
-    'corp_id'  => 'your-corp-id',
+    // 企业ID
+    'corp_id' => 'your-corp_id',
+
+    // +----------------------------------------------------------------------
+    // | 通讯录同步助手
+    // +----------------------------------------------------------------------
+
     'contacts' => [
-        'token'   => 'your-contacts-agent-token',
-        'aes_key' => 'your-contacts-agent-aes-key',
-        'secret'  => 'your-contacts-agent-secret',
+        'token'   => 'your-contacts-token',
+        'aes_key' => 'your-contacts-aes_key',
+        'secret'  => 'your-contacts-secret',
     ],
-    'test'     => [
-        'agent_id' => 'your-test-agent-id',
-        'token'    => 'your-test-agent-token',
-        'aes_key'  => 'your-test-agent-aes-key',
-        'secret'   => 'your-test-agent-secret',
+
+    // +----------------------------------------------------------------------
+    // | 其他应用
+    // +----------------------------------------------------------------------
+
+    'test' => [
+        'agent_id' => 'your-test-agent_id',
+        'token'    => 'your-test-token',
+        'aes_key'  => 'your-test-aes_key',
+        'secret'   => 'your-test-secret',
     ],
 ];

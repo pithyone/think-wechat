@@ -3,6 +3,8 @@
 namespace think;
 
 use pithyone\wechat\Work;
+use think\Bridge\CacheBridge;
+use think\Bridge\LoggerBridge;
 
 class WeChat
 {
@@ -13,9 +15,11 @@ class WeChat
      */
     public static function agent($agentId)
     {
-        $config = Config::get('work_wechat');
-
-        $config['debug'] = App::$debug;
+        $config = array_merge(Config::get('work_wechat'), [
+            'debug'  => App::$debug,
+            'cache'  => new CacheBridge(),
+            'logger' => new LoggerBridge(),
+        ]);
 
         $work = new Work($config);
 
